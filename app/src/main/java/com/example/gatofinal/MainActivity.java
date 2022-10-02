@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         C9=(Button) findViewById(R.id.C9);
 
 
+
         C1.setOnClickListener(this);
         C2.setOnClickListener(this);
         C3.setOnClickListener(this);
@@ -41,32 +42,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         C7.setOnClickListener(this);
         C8.setOnClickListener(this);
         C9.setOnClickListener(this);
-        REINICIAR.setOnClickListener(this);
+
+
 
     }
 
     @Override
     public void onClick(View view) {
         Button b = (Button) view;
-
         c++;
         turno = c % 2;
         if (turno == 1) {
-            b.setText("X");
-            b.setTextColor(android.R.color.darker_gray);
+            b.setText("x");
+            b.setTextColor(Color.BLACK);
             b.setEnabled(false);
             verificaGanador();
         } else {
             b.setText("O");
-            b.setTextColor(android.R.color.darker_gray);
+            b.setTextColor(Color.BLACK);
             b.setEnabled(false);
             verificaGanador();
 
 
         }
-
-
-
 
     }
 
@@ -75,74 +73,124 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void verificaGanador(){
 
 
-        if (C1.getText() == "X" && C2.getText() == "X" && C3.getText() == "X")
+        if (C1.getText() == "x" && C2.getText() == "x" && C3.getText() == "x")
         {
         ganador.setText("el ganador es: X");
             inabilitar();
-            reinicio();
+
         }
-        else if (C1.getText() == "X" && C5.getText() == "X" && C9.getText() == "X")
+        else if (C1.getText() == "x" && C5.getText() == "x" && C9.getText() == "x")
         {
             ganador.setText("el ganador es: X");
             inabilitar();
-            reinicio();
+
         }
-        else if (C1.getText() == "X" && C4.getText() == "X" && C7.getText() == "X")
+        else if (C5.getText() == "x" && C4.getText() == "x" && C6.getText() == "x")
         {
             ganador.setText("el ganador es: X");
             inabilitar();
-            reinicio();
+
         }
-        else if (C3.getText() == "X" && C5.getText() == "X" && C7.getText() == "X")
+        else if (C7.getText() == "x" && C8.getText() == "x" && C9.getText() == "x")
         {
             ganador.setText("el ganador es: X");
             inabilitar();
-            reinicio();
+
         }
-        else if (C2.getText() == "X" && C5.getText() == "X" && C8.getText() == "X")
+        else if (C9.getText() == "x" && C6.getText() == "x" && C3.getText() == "x")
         {
             ganador.setText("el ganador es: X");
             inabilitar();
-            reinicio();
+
+        }
+        else if (C1.getText() == "x" && C4.getText() == "x" && C7.getText() == "x")
+        {
+            ganador.setText("el ganador es: X");
+            inabilitar();
+
+        }
+        else if (C3.getText() == "x" && C5.getText() == "x" && C7.getText() == "x")
+        {
+            ganador.setText("el ganador es: X");
+            inabilitar();
+
+        }
+        else if (C2.getText() == "x" && C5.getText() == "x" && C8.getText() == "x")
+        {
+            ganador.setText("el ganador es: X");
+            inabilitar();
+
         }
         else if (C1.getText() == "O" && C2.getText() == "O" && C3.getText() == "O")
         {
             ganador.setText("el ganador es: 0");
             inabilitar();
-            reinicio();
+
+        }
+        else if (C5.getText() == "O" && C4.getText() == "O" && C6.getText() == "O")
+        {
+            ganador.setText("el ganador es: O");
+            inabilitar();
+
+        }
+        else if (C7.getText() == "O" && C8.getText() == "O" && C9.getText() == "O")
+        {
+            ganador.setText("el ganador es: O");
+            inabilitar();
+
+        }
+        else if (C9.getText() == "O" && C6.getText() == "O" && C3.getText() == "O")
+        {
+            ganador.setText("el ganador es: o");
+            inabilitar();
+
         }
         else if (C1.getText() == "O" && C5.getText() == "O" && C9.getText() == "O")
         {
             ganador.setText("el ganador es: 0");
-            reinicio();
+            inabilitar();
         }
         else if (C1.getText() == "O" && C4.getText() == "O" && C7.getText() == "O")
         {
             ganador.setText("el ganador es: 0");
             inabilitar();
-            reinicio();
+
         }
         else if (C3.getText() == "O" && C5.getText() == "O" && C7.getText() == "O")
         {
             ganador.setText("el ganador es: 0");
             inabilitar();
-            reinicio();
+
         }
         else if (C2.getText() == "O" && C5.getText() == "O" && C8.getText() == "O")
         {
             ganador.setText("el ganador es: 0");
             inabilitar();
-            reinicio();
+
         }else {
             ganador.setText("el ganador : NADIE GANO");
-            reinicio();
+
         }
 
 
     }
 
 
-    public void reinicio() {
+
+
+    public void inabilitar() {
+        C1.setEnabled(false);
+        C2.setEnabled(false);
+        C3.setEnabled(false);
+        C4.setEnabled(false);
+        C5.setEnabled(false);
+        C6.setEnabled(false);
+        C7.setEnabled(false);
+        C8.setEnabled(false);
+        C9.setEnabled(false);
+    }
+
+    public void reinicio(View view) {
         C1.setEnabled(true);
         C1.setText("");
         C2.setEnabled(true);
@@ -161,19 +209,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         C8.setText("");
         C9.setEnabled(true);
         C9.setText("");
-
-
-    }
-
-    public void inabilitar() {
-        C1.setEnabled(false);
-        C2.setEnabled(false);
-        C3.setEnabled(false);
-        C4.setEnabled(false);
-        C5.setEnabled(false);
-        C6.setEnabled(false);
-        C7.setEnabled(false);
-        C8.setEnabled(false);
-        C9.setEnabled(false);
     }
 }

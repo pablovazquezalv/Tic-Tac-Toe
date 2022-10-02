@@ -136,7 +136,6 @@
         android:layout_height="100dp"
         android:backgroundTint="@color/white"
         android:text=""
-        android:textColor="@android:color/holo_blue_dark"
         android:textSize="53dp"
         app:layout_constraintBottom_toTopOf="@+id/footer"
         app:layout_constraintEnd_toStartOf="@+id/v1"
@@ -150,7 +149,6 @@
         android:layout_height="100dp"
         android:backgroundTint="#DC962F"
         android:text=""
-        android:textColor="@android:color/holo_blue_dark"
         android:textSize="53dp"
         app:layout_constraintBottom_toTopOf="@+id/footer"
         app:layout_constraintEnd_toStartOf="@+id/v2"
@@ -175,6 +173,7 @@
 
     <Button
         android:id="@+id/REINICIAR"
+        android:onClick="reinicio"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/azul"
