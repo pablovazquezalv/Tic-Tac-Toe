@@ -75,100 +75,100 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         if (C1.getText() == "x" && C2.getText() == "x" && C3.getText() == "x")
         {
-        ganador.setText("el ganador es: X");
+        ganador.setText("GANO: X");
             inabilitar();
 
         }
         else if (C1.getText() == "x" && C5.getText() == "x" && C9.getText() == "x")
         {
-            ganador.setText("el ganador es: X");
+            ganador.setText("GANO: X");
             inabilitar();
 
         }
         else if (C5.getText() == "x" && C4.getText() == "x" && C6.getText() == "x")
         {
-            ganador.setText("el ganador es: X");
+            ganador.setText("GANO: X");
             inabilitar();
 
         }
         else if (C7.getText() == "x" && C8.getText() == "x" && C9.getText() == "x")
         {
-            ganador.setText("el ganador es: X");
+            ganador.setText("GANO: X");
             inabilitar();
 
         }
         else if (C9.getText() == "x" && C6.getText() == "x" && C3.getText() == "x")
         {
-            ganador.setText("el ganador es: X");
+            ganador.setText("GANO: X");
             inabilitar();
 
         }
         else if (C1.getText() == "x" && C4.getText() == "x" && C7.getText() == "x")
         {
-            ganador.setText("el ganador es: X");
+            ganador.setText("GANO: X");
             inabilitar();
 
         }
         else if (C3.getText() == "x" && C5.getText() == "x" && C7.getText() == "x")
         {
-            ganador.setText("el ganador es: X");
+            ganador.setText("GANO: X");
             inabilitar();
 
         }
         else if (C2.getText() == "x" && C5.getText() == "x" && C8.getText() == "x")
         {
-            ganador.setText("el ganador es: X");
+            ganador.setText("GANO: X");
             inabilitar();
 
         }
         else if (C1.getText() == "O" && C2.getText() == "O" && C3.getText() == "O")
         {
-            ganador.setText("el ganador es: 0");
+            ganador.setText("GANO: 0");
             inabilitar();
 
         }
         else if (C5.getText() == "O" && C4.getText() == "O" && C6.getText() == "O")
         {
-            ganador.setText("el ganador es: O");
+            ganador.setText("GANO: O");
             inabilitar();
 
         }
         else if (C7.getText() == "O" && C8.getText() == "O" && C9.getText() == "O")
         {
-            ganador.setText("el ganador es: O");
+            ganador.setText("GANO: O");
             inabilitar();
 
         }
         else if (C9.getText() == "O" && C6.getText() == "O" && C3.getText() == "O")
         {
-            ganador.setText("el ganador es: o");
+            ganador.setText("GANO: o");
             inabilitar();
 
         }
         else if (C1.getText() == "O" && C5.getText() == "O" && C9.getText() == "O")
         {
-            ganador.setText("el ganador es: 0");
+            ganador.setText("GANO: 0");
             inabilitar();
         }
         else if (C1.getText() == "O" && C4.getText() == "O" && C7.getText() == "O")
         {
-            ganador.setText("el ganador es: 0");
+            ganador.setText("GANO: 0");
             inabilitar();
 
         }
         else if (C3.getText() == "O" && C5.getText() == "O" && C7.getText() == "O")
         {
-            ganador.setText("el ganador es: 0");
+            ganador.setText("GANO: 0");
             inabilitar();
 
         }
         else if (C2.getText() == "O" && C5.getText() == "O" && C8.getText() == "O")
         {
-            ganador.setText("el ganador es: 0");
+            ganador.setText("GANO: 0");
             inabilitar();
 
         }else {
-            ganador.setText("el ganador : NADIE GANO");
+            //ganador.setText("GANO: ");
 
         }
 
@@ -209,5 +209,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         C8.setText("");
         C9.setEnabled(true);
         C9.setText("");
+        ganador.setText("");
     }
 }

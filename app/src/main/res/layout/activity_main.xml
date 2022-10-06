@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gato3"
+    android:background="@color/azul"
     tools:context=".MainActivity">
 
 
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="439dp" />
+        app:layout_constraintGuide_begin="390dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/h1"
@@ -171,34 +171,37 @@
         app:layout_constraintTop_toTopOf="@+id/h2"
         app:layout_constraintVertical_bias="0.102" />
 
+
     <Button
         android:id="@+id/REINICIAR"
-        android:onClick="reinicio"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/azul"
+        android:onClick="reinicio"
         android:text="Reiniciar"
         android:textColor="@color/white"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v2"
-        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="@+id/v1"
         app:layout_constraintTop_toTopOf="@+id/footer"
-        app:layout_constraintVertical_bias="0.20" />
-
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/V1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="40dp"
+        android:layout_width="152dp"
+        android:layout_height="37dp"
+        android:fontFamily="sans-serif-black"
         android:text="MARCADOR:"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="@+id/v1"
-        app:layout_constraintTop_toBottomOf="@+id/REINICIAR" />
+        app:layout_constraintTop_toBottomOf="@+id/REINICIAR"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
